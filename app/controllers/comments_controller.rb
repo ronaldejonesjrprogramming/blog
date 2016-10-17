@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: comments
+#
+#  id         :integer          not null, primary key
+#  post_id    :integer
+#  body       :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
 
